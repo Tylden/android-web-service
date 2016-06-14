@@ -13,22 +13,21 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: simon_lehmann_and_ass
-  password: MhalliF123
+  username: tylden_android
+  password: x76t3KBm659VPhZ
   host: db.slehmann36.com
   socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  database: simon_lehmann_and_ass
-    #   mysql-rails-test_development
+  database: tylden_android
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: simon_lehmann_and_ass
+  database: tylden_android
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -51,6 +50,4 @@ test:
 #
 production:
   <<: *default
-  database: simon_lehmann_and_ass
-  #username: admin
-  #password: MhalliF123 #<%= ENV['MYSQL-RAILS-TEST_DATABASE_PASSWORD'] %>
+  database: tylden_android

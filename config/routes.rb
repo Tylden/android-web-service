@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   namespace :api, :defaults => { :format => :json } do # for api. subdomain = , :path => "", :constraints => {:subdomain => "api"}
     namespace :v1 do
-      resources :names
+      resources :contacts
     end
   end
 
